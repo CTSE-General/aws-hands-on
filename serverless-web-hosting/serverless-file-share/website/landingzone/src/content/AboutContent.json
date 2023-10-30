@@ -1,0 +1,16 @@
+{
+  "title": "FileShare Service",
+  "text": "This demo web application provides a real world usecase to transfer data securely between users using S3 and cookie based authentication.",
+  "section": [
+    {
+      "title": "No Amplify.js",
+      "content": "Authentication process will be handled by Edge@Lambda and secure cookies will be transported.",
+      "icon": "idea-bulb-svgrepo-com.svg"
+    },
+    {
+      "title": "Protected service",
+      "content": "FileShare Service is a protected service from landing zone which needs authentication.",
+      "icon": "idea-bulb-svgrepo-com.svg"
+    }
+  ]
+}
