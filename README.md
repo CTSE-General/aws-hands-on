@@ -10,5 +10,5 @@ If you are a beginner and you know what AWS Lambda function is. But you don't kn
 < TODO >
 
 # Code provided by
-- Junghwa "Theo" Park
-- Jun Cho
+- Junghwa "Theo" Park ([LinkedIn](https://www.linkedin.com/in/junghwa-park-279129235/))
+- Jun Cho ([LinkedIn](https://www.linkedin.com/in/cho-jun/))
