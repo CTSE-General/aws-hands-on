@@ -1,1 +1,0 @@
-##### Create your CDK Applicaton here (alternatively rename the folder and create your terraform application here)
