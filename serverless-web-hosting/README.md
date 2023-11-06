@@ -4,6 +4,10 @@ In **serverless-web-hosting** project, I will demonstrate two different solution
 
 The React Application in this project is based on [url-shotener-frontend-ts](https://github.com/aditya-singh9/url-shotener-frontend-ts). Special thanks to [adity](https://www.adityasingh.tech/) ❤️
 
+# ⭐️ Scenario: Social Media Marketing Campaign
+
+Imagine you are part of a marketing team for a rapidly growing e-commerce company. You have a new product launch and a compelling social media marketing campaign. However, the URLs for your campaign are long and unattractive. To enhance the user experience and track the campaign's success, your task is to create a URL shortening service with a user-friendly web frontend. This will help you generate short, branded URLs for your campaign materials, such as product pages and promotional content. Users should be able to create shortened links and view basic analytics, like click-through rates, to measure the impact of your marketing efforts.
+
 # Tasks
 
 During this tasks in serverless-web-hosting, we introduce two major different architecture patterns to host web appliction in aws cloud. We will begin with building a web applictaion (Url-Shortner) without cloud integration (Subtask 1). Then you have 2 different subtasks to deploy your RESTful API in aws cloud with different architecture patterns.
@@ -13,6 +17,37 @@ During this tasks in serverless-web-hosting, we introduce two major different ar
 - Frontend Application with React + Typescript
 - API Specification
 - docker-compose.yml
+
+# ✨ DynamoDB Table Schema
+
+DynamoDB Schema is quiet simple. Capability of this table is to hold 1:1 relation between original url and generated short url. As analysis purpose I have added hitCounter attribute, which will be counted up everytime, when user requested to retrieve original url from DynamoDB. Id Key is saved using hashed value in DynamoDB, so there will be only one entry for each url.
+
+![](./docs/img/UrlConverter_Table.png)
+
+### GSI Table
+
+![](./docs/img/UrlConverter_GSI_Entities.png)
+
+## ✔️ Run Local DynamoDB in Terminal
+
+When you have installed [DynamoDBLocal.jar](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html), then I would recommend to save following function in your shell to run local dynamoDB easily.
+
+```
+# To Run DynamoDb Local
+function dynamo(){
+ cd $USER/dynamolocal
+
+ java -Djava.library.path=./DynamoDBLocal_lib/ -jar DynamoDBLocal.jar -sharedDb -port 8000
+}
+```
+
+Whenever you run **dynamo** in your terminal, it will start to host your local dynamoDB on port 8000.
+
+## ✔️ Set Up DynamoDB Table in NoSQL Workbench
+
+Download the **dynamodb.json** file from **sample_db** and commit it into your localhost.
+
+# 🚀 Base Project without Cloud Hosting
 
 ## ✅ Subtask 1 - dockerized web application
 
