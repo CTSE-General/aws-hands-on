@@ -15,7 +15,7 @@ During this tasks in serverless-web-hosting, we introduce two major different ar
 # Prerequisite
 
 - Frontend Application with React + Typescript
-- API Specification
+- [API Specification](https://editor.swagger.io/?url=https://raw.githubusercontent.com/CTSE-General/aws-hands-on/main/serverless-web-hosting/swagger.yaml)
 - docker-compose.yml
 
 # ✨ DynamoDB Table Schema
