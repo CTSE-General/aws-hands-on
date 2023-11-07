@@ -32,3 +32,8 @@ For migration to AWS of containerized app application, I have chosen to host web
 2. ⚡ [ECS Fargate Application](https://exanubes.com/blog/ecs-fargate-deployment)
 
 3. 🐱‍💻 [url-shotener-frontend-ts](https://github.com/aditya-singh9/url-shotener-frontend-ts)
+
+## 💬 Contact Persons
+
+1. Jun Cho - jcho2@deloitte.de
+2. Junghwa Park - junghwpark@deloitte.de

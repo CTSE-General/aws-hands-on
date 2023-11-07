@@ -51,18 +51,13 @@ git commit -m "change message"
 ```
 
 Now it is time to configure an ElasticBeanstalk App:
-- Navigate to ElasticBeanstalk and create an Application
-- Choose **Web server environment** under the Configure environment heading
-- For the application name use **"<YOUR_NAME>_aws-hands-on"**
-- Select Node.js as your platform
-- Confirm that the radio button next to Sample application under the Application code heading is selected
-- Confirm that the radio button next to Single instance (free tier eligible) under the Presets heading is selected
+- Create as **Web server environment**
+- Application name: **"<YOUR_NAME>_aws-hands-on"**
+- Node.js as Platform
 - Select Next
-- On the Configure service access screen, choose Use an existing service role for Service Role
-- As your Service Role choose 'aws-elasticbeanstalk-service-role'
-- As your EC2 instance profile choose 'aws-elasticbeanstalk-ec2-role' ( if not available choose the default one or create a new one)
-- Choose Skip to review
-- Choose Submit
+- Use the existing service role 'aws-elasticbeanstalk-service-role'
+- As your EC2 instance profile choose 'aws-elasticbeanstalk-ec2-role' (if not available choose the default one or create a new one)
+- Choose Skip to review & Submit
 
 You have successfully created an App in ElasticBeanstalk! You can test your App by clicking into your environment and opening the 'Domain'
 
@@ -85,16 +80,11 @@ You have successfully created an App in ElasticBeanstalk! You can test your App 
 
 First step is to setup CodeBuild. For this navigate to the AWS CodeBuild Service. For the setup perform the following steps:
 
-- For the Project Name choose <YOUR_NAME>-aws-hands-on-cbp
-- Select GitHub as the Source Provider
-- Connect to your GitHub Account and choose the repository you have setup earlier
-- Confirm that Managed Image is selected
-- Select Amazon Linux 2 from the Operating system dropdown menu
-- Select Standard from the Runtime(s) dropdown menu
-- Select aws/codebuild/amazonlinux2-x86_64-standard:3.0 from the Image dropdown menu
-- Confirm that Always use the latest image for this runtime version is selected for Image version
-- Confirm that Linux is selected for Environment type
-- Confirm that New service role is selected
+- Project Name: <YOUR_NAME>-aws-hands-on-cbp
+- Select GitHub as the Source Provider (connect to your GitHub Account and choose the repository you have setup earlier)
+- Select Amazon Linux 2 as OS
+- Select Standard Runtime
+- Select aws/codebuild/amazonlinux2-x86_64-standard:3.0 Image
 
 Next you will be creating a Buildspec file for your buildspec project. For this perform the following steps:
 
@@ -132,24 +122,23 @@ To create your first CodePipelin navigate to the AWS CodePipeline Service and cr
 - Select 'New service role'
 - Choose next
 
-Next up is the creation of source first stage:
+Next up is the creation of the **source stage**:
 - choose **GitHub Version 1** as the Source provider
 - connect your GitHub and choose your repository and select the main branch
 - Confirm that GitHub Webhooks is selected
 - Choose next
 
-The second stage we are going to add is the build stage:
+The second stage we are going to add is the **build stage**:
 - Choose **AWS CodeBuild** as the Build Provider
 - Select the Europe (Ireland) Region (eu-west-1)
 - select build-<YOUR_NAME> as the project name
 - choose next
 
-Last but not least it is time to add the deploy stage:
+Last but not least it is time to add the **deploy stage**:
 - choose **AWS Elastic Beanstalk** as the Deploy Provider
 - Select the Europe (Ireland) Region (eu-west-1)
 - Select your previously created environment
-- Choose next
-- Choose Create pipeline
+- Choose next & Create pipeline
 
 Now that you pipeline is setup you should be able to execute your pipeline and see the first deployment running through.
 
@@ -167,12 +156,11 @@ Now that you pipeline is setup you should be able to execute your pipeline and s
 - Test Pipeline
 
 To create the review stage perform the following:
-- Select your pipeline and edit it
+- Edit your Pipeline
 - Choose 'Add Stage' between the Build and Deploy stages
-- In the Stage name field, enter Review and add the stage
-- In the Review stage, add an action group
-- Under Action name, enter **Manual_Review** and select **Manual approval**
-- Confirm that the optional fields have been left blank and click done
+- Use Stage name: 'Review' and add the stage
+- Add an action group to the stage
+- Action name: **Manual_Review** and select **Manual approval**
 - Choose save twice
 
 Now you have successfully setup a manual approval stage.
@@ -181,6 +169,14 @@ After you have commited and pushed your changes the pipeline should automaitcall
 
 Monitor the pipeline and approve the manual step once it is reached. As soon as the deploy stage is done you can navigate to your ElasticBeanstalk Environment and verify that the changes were applied by opening your Domain.
 
+# ⭐️ Bonus Task
+In case you are done faster than expected and you found this too easy you can implement, the whole infrastrucutre you have built, in code. For that use a Cloud9 Environment.
+
 ## 👀 References
 
 1. ☁️ [AWS Create Continuous Delivery Pipeline](https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/?ref=gsrchandson)
+
+## 💬 Contact Persons
+
+1. Jun Cho - jcho2@deloitte.de
+2. Junghwa Park - junghwpark@deloitte.de
