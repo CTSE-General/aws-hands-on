@@ -176,7 +176,11 @@ In case you are done faster than expected and you found this too easy you can im
 
 1. ☁️ [AWS Create Continuous Delivery Pipeline](https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/?ref=gsrchandson)
 
-## 💬 Contact Persons
+## 💬 Contact
 
+### Teams
+If you have any questions please post them into the ['Questions' channel](https://teams.microsoft.com/l/channel/19%3a9fe1a35bb12141d58fc4c36e7522b929%40thread.tacv2/Questions?groupId=e52a6778-7228-4517-97ef-f77bcba7b4de&tenantId=36da45f1-dd2c-4d1f-af13-5abe46b99921) in Teams. We will answer your questions as soon as possible.
+
+### Direct contact
 1. Jun Cho - jcho2@deloitte.de
 2. Junghwa Park - junghwpark@deloitte.de

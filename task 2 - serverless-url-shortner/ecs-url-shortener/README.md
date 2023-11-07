@@ -33,7 +33,11 @@ For migration to AWS of containerized app application, I have chosen to host web
 
 3. 🐱‍💻 [url-shotener-frontend-ts](https://github.com/aditya-singh9/url-shotener-frontend-ts)
 
-## 💬 Contact Persons
+## 💬 Contact
 
+### Teams
+If you have any questions please post them into the ['Questions' channel](https://teams.microsoft.com/l/channel/19%3a9fe1a35bb12141d58fc4c36e7522b929%40thread.tacv2/Questions?groupId=e52a6778-7228-4517-97ef-f77bcba7b4de&tenantId=36da45f1-dd2c-4d1f-af13-5abe46b99921) in Teams. We will answer your questions as soon as possible.
+
+### Direct contact
 1. Jun Cho - jcho2@deloitte.de
 2. Junghwa Park - junghwpark@deloitte.de
