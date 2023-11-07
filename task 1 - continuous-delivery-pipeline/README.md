@@ -2,6 +2,9 @@
 
 In **continuous-delivery-pipeline** project, we will be creating a continuous delivery pipeline in AWS. Pipelines are a cruial part of almost every project.
 
+![](./docs/img/subtask-4-architecture.png)
+*The Architecure you will be building*
+
 # Tasks
 
 The continuous-delivery-pipelin task is going to be split up into *4 subtasks*. **Subtask 1:** You will begin by altering the *app.js* file and pushing the changes to your repository. **Subtask 2:** Next step is the deployment of the application into the AWS Elastic Beanstalk Service. Next you will create a build project in AWS Codebuild. **Subtask 3:** Following this you will create the actual pipeline which will be building and deploying your application automatically using AWS CodePipeline. **Subtask 4:** Finally you will finalize the Pipeline by adding a manual approval step (which are important to have) and testing the pipeline.
@@ -20,9 +23,10 @@ The continuous-delivery-pipelin task is going to be split up into *4 subtasks*. 
 
 # 🚀 Setup a Web-App using ElasticBeanstalk
 
-## ✅ Subtask 1 - dockerized web application
+## ✅ Subtask 1 - elastic beanstalk web application
 
-![](./docs/img/docker-url-shortener.png)
+![](./docs/img/subtask-1-architecture.png)
+*Current Architecure*
 
 > In this subtask, your goal is setup an ElasticBeanstalk Application.
 
@@ -32,7 +36,7 @@ The continuous-delivery-pipelin task is going to be split up into *4 subtasks*. 
 
 At the end, you should be able to access your web application via the given Domain in your ElasticBeanstalk environment.
 
-### 🔥 Adjust App.js
+### 🛠️ Adjust App.js
 
 Edit the App.js to your liking or simply change the "Hello World" text to some custom text.
 
@@ -64,7 +68,8 @@ You have successfully created an App in ElasticBeanstalk! You can test your App 
 
 ### ✨ Architecture
 
-![](./docs/img/apigw-url-shortener.png)
+![](./docs/img/subtask-2-architecture.png)
+*Current Architecure*
 
 > In this task you will create a CodeBuild Project which will be used to build the source code that is located inside of your GitHub Respository. AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
 
@@ -105,7 +110,8 @@ Now you can procees by clicking 'Create build project'. In your dashboard you ca
 
 ### ✨ Architecture
 
-![](./docs/img/ecs-url-shortener.png)
+![](./docs/img/subtask-3-architecture.png)
+*Current Architecure*
 
 > The main element of this task is the Continuous Delivery Pipeline. You are going to set up a continuous delivery pipeline with source, build, and deploy stages. The pipeline will detect changes in the code stored in your GitHub repository, build the source code using AWS CodeBuild, and then deploy your application to AWS Elastic Beanstalk.
 
@@ -147,7 +153,8 @@ Now that you pipeline is setup you should be able to execute your pipeline and s
 
 ### ✨ Architecture
 
-![](./docs/img/ecs-url-shortener.png)
+![](./docs/img/subtask-4-architecture.png)
+*Final Architecure*
 
 > Now we will finalize and test the newly created Continuous Delivery Pipeline.
 
