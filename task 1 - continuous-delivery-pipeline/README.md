@@ -5,6 +5,10 @@ In **continuous-delivery-pipeline** project, we will be creating a continuous de
 ![](./docs/img/subtask-4-architecture.png)
 *The Architecure you will be building*
 
+# ⭐️ Scenario: Implementing an AWS Continuous Delivery Pipeline
+
+In a real-world business setting, the implementation of an AWS Continuous Delivery Pipeline is a strategic move to automate, standardize, and enhance the software deployment process. This scenario outlines the steps and objectives for creating such a pipeline to streamline software development and deployment.
+
 # Tasks
 
 The continuous-delivery-pipelin task is going to be split up into *4 subtasks*. **Subtask 1:** You will begin by altering the *app.js* file and pushing the changes to your repository. **Subtask 2:** Next step is the deployment of the application into the AWS Elastic Beanstalk Service. Next you will create a build project in AWS Codebuild. **Subtask 3:** Following this you will create the actual pipeline which will be building and deploying your application automatically using AWS CodePipeline. **Subtask 4:** Finally you will finalize the Pipeline by adding a manual approval step (which are important to have) and testing the pipeline.
