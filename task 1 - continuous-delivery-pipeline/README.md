@@ -16,14 +16,8 @@ The continuous-delivery-pipelin task is going to be split up into *4 subtasks*. 
 # Prerequisites
 
 - Create GitHub Account
-- Fork [example application](https://github.com/aws-samples/aws-elastic-beanstalk-express-js-sample)
-- Clone the forked repo locally
-
-## How to fork the example repo
-
-- Login into your GitHub Account
-- Choose the white Fork button on the top right corner of the screen. Next, you will see a small window asking you where you would like to fork the repo.
-- Verify it is showing your account and choose Create a fork. After a few seconds, your browser will display a copy of the repo in your account under Repositories.
+- Clone the following repo to your machine:
+[CTSE-General/aws-elastic-beanstalk-express-js-sample](https://github.com/CTSE-General/aws-elastic-beanstalk-express-js-sample.git)
 
 # 🚀 Setup a Web-App using ElasticBeanstalk
 
@@ -70,7 +64,7 @@ You have successfully created an App in ElasticBeanstalk! You can test your App 
 ![](./docs/img/subtask-2-architecture.png)
 *Current Architecure*
 
-> In this task you will create a CodeBuild Project which will be used to build the source code that is located inside of your GitHub Respository. AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+> In this task you will create a CodeBuild Project which will be used to build the source code that is located inside of the given GitHub Respository. AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
 
 - Create a build project with AWS CodeBuild
 
@@ -81,7 +75,7 @@ You have successfully created an App in ElasticBeanstalk! You can test your App 
 First step is to setup CodeBuild. For this navigate to the AWS CodeBuild Service. For the setup perform the following steps:
 
 - Project Name: <YOUR_NAME>-aws-hands-on-cbp
-- Select GitHub as the Source Provider (connect to your GitHub Account and choose the repository you have setup earlier)
+- Select GitHub as the Source Provider and choose the training repo
 - Select Amazon Linux 2 as OS
 - Select Standard Runtime
 - Select aws/codebuild/amazonlinux2-x86_64-standard:3.0 Image
@@ -107,7 +101,7 @@ Now you can procees by clicking 'Create build project'. In your dashboard you ca
 ![](./docs/img/subtask-3-architecture.png)
 *Current Architecure*
 
-> The main element of this task is the Continuous Delivery Pipeline. You are going to set up a continuous delivery pipeline with source, build, and deploy stages. The pipeline will detect changes in the code stored in your GitHub repository, build the source code using AWS CodeBuild, and then deploy your application to AWS Elastic Beanstalk.
+> The main element of this task is the Continuous Delivery Pipeline. You are going to set up a continuous delivery pipeline with source, build, and deploy stages. The pipeline will detect changes in the code stored in the training GitHub repository, build the source code using AWS CodeBuild, and then deploy your application to AWS Elastic Beanstalk.
 
 - Creating an AWS CodePipeline
 
