@@ -36,7 +36,10 @@ At the end, you should be able to access your web application via the given Doma
 
 ### 🛠️ Adjust App.js
 
-Edit the App.js to your liking or simply change the "Hello World" text to some custom text.
+Inside of the App.js edit the text in the following line to something different:
+```
+app.get('/', (req, res) => res.send('**<CHANGE THIS STRING>**'));
+```
 
 Next push your changes into the repository using:
 ```
@@ -158,7 +161,7 @@ To create the review stage perform the following:
 - Choose save twice
 
 Now you have successfully setup a manual approval stage.
-The last thing we are going to do is to test the functionality of the created pipeline. For that we are going to change the App.js file in our repo using for example VSCode and then pushing the changes to our repo. The change can again be a simple change of the display message.
+The last thing we are going to do is to test the functionality of the created pipeline. For that we are going to change the text inside of the App.js file once again and then pushing the changes to our repo. The change can again be a simple change of the display message.
 After you have commited and pushed your changes the pipeline should automaitcally get triggered.
 
 Monitor the pipeline and approve the manual step once it is reached. As soon as the deploy stage is done you can navigate to your ElasticBeanstalk Environment and verify that the changes were applied by opening your Domain.
