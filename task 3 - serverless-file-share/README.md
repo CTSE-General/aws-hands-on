@@ -1,6 +1,9 @@
 # AWS Serverless File Share Service
 
 ## ✅ Used AWS Services
+
+🌩️ CodePipeline (including CodeBuild + CodeDeploy)
+
 🌩️ Lambda Functions
 
 🌩️ HTTP API Gateway
@@ -16,6 +19,12 @@
 🌩️ DynamoDB
 
 🌩️ Cognito
+
+🌩️ ChatBot
+
+🌩️ SNS
+
+🌩️ CloudWatch
 
 # ⭐️ Scenario: Serverless File Sharing on AWS
 Picture a dynamic consultancy firm where remote teams constantly exchange vital project data, reports, and collaborative resources. The existing file-sharing infrastructure lacks cohesion, leading to delays and data accessibility issues. Your task is to craft a serverless file-sharing system on AWS, offering seamless, secure, and scalable data exchange. This solution will empower teams across various locations to instantly access, share, and collaborate on essential documents. Your goal is to design a solution that ensures smooth access, version control, robust security, and effortless data backups. Imagine the impact: increased efficiency, smoother workflows, and enhanced collaboration across the organization.
